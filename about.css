@@ -1,0 +1,38 @@
+body{
+    background-image: url(https://source.unsplash.com/esCc1qx6TVw);
+    background-size:cover;
+    background-repeat: repeat;
+    background-position: center;
+    font-family: 'Baloo', cursive;
+}
+html{
+    height:100%;
+}
+.jumbotron{
+    background: transparent;
+    margin: auto;
+}
+.jumbotron h1{
+    color: #1f4da8;
+}
+.jumbotron p{
+    color: #6eeae0;
+}
+hr{
+    border:none;
+    height: 1px;
+    color: black;;
+    background-color:black;
+}
+.shadow{
+    text-shadow: 10px 5px 5px #000000;
+}
+.jumbotron h2{
+	color: white;
+}
+#paragraph{
+	color: white;
+}
+#paragraph1{
+	color:white;
+}
