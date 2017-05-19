@@ -3,26 +3,61 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Score Keeper</title>
+	<link rel="stylesheet" href="bootstrap.css">
 	<style>
 		.winner{
 			color:green;
 		}
 		body{
+			/*text-align: center;*/
+			background: url("https://source.unsplash.com/esCc1qx6TVw");
+			background-size: cover;
+			position: center;
+		}
+		html{
+			height: 100%
+		}
+		#notification{
 			text-align: center;
+			color: blue;
+		}
+		.jumbotron h1{
+			color: blue;
+			text-align: center;
+		}
+		.jumbotron{
+			background: transparent;
+		}
+		#notification2{
+			text-align: center;
+			color: blue;
 		}
 	</style>
 </head>
 <body>
-	<h1>Score Keeping for 2 Players</h1>
-	<h1><span id="p1Display">0</span> to <span id="p2Display">0</span></h1>
+	<div class="container">
+		<div class="jumbotron">
+			<h1>Score Keeping for 2 Players</h1>
+		</div>
+		<div class="row">
+			<div class="col-sm-12" id="notification">
+				<h2>Head to Head</h2>
+				<h1><span id="p1Display">0</span> to <span id="p2Display">0</span></h1>
+			</div>
+		</div>
+		<div class="row">
+			<div id="notification2" class="col-sm-12">
+				<p>Playing to : <span>5</span></p>
+				<label for="num">Enter a number to play to:</label>
+				<input type="number" id="num">
+				<button id="p1">Player One</button>
+				<button id="p2">Player Two</button>
+				<button id="reset">Reset</button>
+			</div>
+		</div>
+	</div>
 	<p>Playing to : <span>5</span></p>
-	<label for="num">Enter a number to play to:</label>
-	<input type="number" id="num">
-	<button id="p1">Player One</button>
-	<button id="p2">Player Two</button>
-	<button id="reset">Reset</button>
-
-
+	
 	<script type="text/javascript" src="ScoreKeeper.js"></script>
 </body>
 </html>
