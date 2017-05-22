@@ -33,7 +33,7 @@ hardBtn.addEventListener("click", function(){
 	pickedColor = pickColor();
 	colorDisplay.textContent = pickedColor;
 	for (var i = 0; i < squares.length; i++) {
-		squares[i].style.backgroundColor = color[i];
+		squares[i].style.backgroundColor = colors[i];
 		squares[i].style.display = "none";
 	}
 })
@@ -47,11 +47,13 @@ resetButton.addEventListener('click', function() {
 	pickedColor = pickColor();
 	//change colorDisplay to match picked Color
 	colorDisplay.textContent = pickedColor;
+	messageDisplay.textContent = "";
+	this.textContent = "New Colors";
 	//change the color of squares
 	for (var i = 0; i < squares.length; i++) {
 		squares[i].style.backgroundColor = colors[i];
 	}
-	h1.style.backgroundColor = "#232323";
+	h1.style.backgroundColor = "steelblue";
 });
 
 // runs through all the squares 
@@ -108,8 +110,3 @@ function randomColor(){
 	var b = Math.floor(Math.random() * 256);
 	return "rgb(" + r + ", " + g + ", " + b + ")";
 }
-
-
-
-
-
