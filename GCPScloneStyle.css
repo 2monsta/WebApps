@@ -1,0 +1,9 @@
+#header{
+	width: 100%;
+	height: 100px;
+	background-color: green;
+}
+#navbar-nav > li > a{
+	padding-left: 30px;
+	padding-right: 30px;
+}
